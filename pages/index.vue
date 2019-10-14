@@ -1,39 +1,23 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        dadjokes
-      </h1>
-      <h2 class="subtitle">
-        My scrumtrulescent Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <b-jumbotron header="Dad Jokes" lead="Welcome to the best corny dad jokes app on the web">
+  </b-jumbotron>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+
 
 export default {
+  head(){
+    meta: [{
+      hid: "description",
+      name: "description",
+      content: "Best plaxe for corny dad jokes"
+    }]
+  },
   components: {
-    Logo
+    
   }
 }
 </script>
